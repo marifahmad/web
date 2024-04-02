@@ -1,7 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import Footer from './components/footer.vue'
 import Buttonc from './components/Buttonc.vue'
+
 </script>
 
 <template>
@@ -27,6 +29,8 @@ import Buttonc from './components/Buttonc.vue'
   </div> -->
 
   <RouterView />
+  
+  <Footer/>
 </template>
 
 <style scoped>
