@@ -39,7 +39,7 @@ export default {
           tanggalMulai: 'Januari 2022',
           tanggalSelesai: 'Desember 2023'
         }
-        // Tambahkan pengalaman lain jika perlu
+        
       ]
     };
   }

@@ -37,12 +37,12 @@ background:url(/src/assets/portfolio-5.jpg);
   font-family: Arial, sans-serif;
   max-width: 450px;
   padding: 10px;
-  margin: auto; /* Menjadikan div tengah secara horizontal */
+  margin: auto; 
   margin-top: 200px;
-  display: flex; /* Menggunakan flexbox */
-  justify-content: center; /* Memusatkan secara horizontal */
-  align-items: center; /* Memusatkan secara vertikal */
-  background-color: rgba(255, 255, 255, 0); /* Warna latar belakang dengan transparansi */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: rgba(255, 255, 255, 0); 
   backdrop-filter: blur(10px);
 }
 

@@ -13,7 +13,7 @@
   padding-left: 10px;
   color: rgb(67, 98, 9);
   text-shadow: 10px;
-  background-color: rgba(255, 255, 255, 0); /* Warna latar belakang dengan transparansi */
+  background-color: rgba(255, 255, 255, 0); 
   backdrop-filter: blur(10px);
   
   

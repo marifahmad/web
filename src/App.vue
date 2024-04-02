@@ -96,8 +96,8 @@ nav a:first-of-type {
     margin-right: 20px;
   }
   .profil img {
-  border: 2px solid green; /* Border warna hijau */
-  border-radius: 50%; /* Border radius untuk membuat gambar lingkaran */
+  border: 2px solid green; 
+  border-radius: 50%; 
   padding: 2px;
   margin-left: 20px;
 }
