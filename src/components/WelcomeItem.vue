@@ -5,6 +5,7 @@
 </template>
 
 <style scoped>
+
 .bg{
   width: 100%;
   background: url("/src/assets/hero-bg.jpg") top center;
@@ -18,3 +19,4 @@ h1{
 }
 
 </style>
+
