@@ -34,6 +34,14 @@ import Buttonc from './components/Buttonc.vue'
 </template>
 
 <style scoped>
+.kontent{
+background-color: green;
+background-image: url(/src/assets/hero-bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+}
 header {
   line-height: 1.5;
   height: 600px;
@@ -73,7 +81,6 @@ nav a:first-of-type {
   border: 0;
 }
 
-
 @media (min-width: 1024px) {
   header {
     display: flex;
@@ -110,24 +117,6 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
-@media only screen and (min-width: 768px) {
-  .profil img{
-    margin-left: 270px;
-    margin-top: 20px;
-    background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-  }
- 
-  
-}
-
-/* Untuk ponsel */
-@media only screen and (max-width: 767px) {
-  .profil img{
-    margin-left: 250px;
-  margin-top: 15px;}
 }
 </style>
 
