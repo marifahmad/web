@@ -1,47 +1,30 @@
+// src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import About from '../views/AboutView.vue'
+import Biodata from '../views/biodataView.vue'
+import Skill from '../views/skillView.vue'
+import Pengalaman from '../views/PengalamanView.vue'
+import Tugas from '../components/Tugas.vue' // Import the new Tugas component
+
+const routes = [
+  { path: '/', component: HomeView },
+  { path: '/about', component: About },
+  { path: '/biodata', component: Biodata },
+  { path: '/skill', component: Skill },
+  { path: '/pengalaman', component: Pengalaman },
+  { path: '/tugas', component: Tugas } // Add new route
+]
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
-    },
-    {
-      path: '/biodata',
-      name: 'biodata',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/biodataView.vue')
-    },
-    {
-      path: '/Pengalaman',
-      name: 'Pengalaman',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/PengalamanView.vue')
-    },
-    {
-      path: '/skill',
-      name: 'skill',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/skillView.vue')
-    }
-  ]
+  history: createWebHistory(),
+  routes
+})
+router.beforeEach((to, from, next) => {
+  if (to.path !== '/tugas') {
+    localStorage.setItem('previousRoute', from.fullPath)
+  }
+  next()
 })
 
 export default router

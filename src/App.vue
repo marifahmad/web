@@ -2,14 +2,12 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import Footer from './components/footer.vue'
-import Buttonc from './components/Buttonc.vue'
-
 </script>
 
 <template>
   <header>
     <div class="profil">
-     <img src="/src/assets/profile-picture.jpg" alt="" width="200px" height="200px"  srcset=""> 
+      <img src="/src/assets/profile-picture.jpg" alt="" width="200px" height="200px" srcset="">
     </div>
     <div class="wrapper">
       <HelloWorld msg="M.Arif Ahmad" />
@@ -19,42 +17,37 @@ import Buttonc from './components/Buttonc.vue'
         <RouterLink to="/about">About</RouterLink><br>
         <RouterLink to="/biodata">Biodata</RouterLink><br>
         <RouterLink to="/skill">Skill</RouterLink><br>
-        <RouterLink to="/pengalaman">Pengalaman</RouterLink>
-        
+        <RouterLink to="/pengalaman">Pengalaman</RouterLink><br>
+        <RouterLink to="/tugas">Tugas</RouterLink> <!-- New RouterLink -->
       </nav>
     </div>
   </header>
-  <!-- <div class="kontent">
-    
-  </div> -->
-
+  
   <RouterView />
   
-  <Footer/>
+  <Footer />
 </template>
 
 <style scoped>
-.kontent{
-background-color: green;
-background-image: url(/src/assets/hero-bg.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-
+.kontent {
+  background-color: green;
+  background-image: url(/src/assets/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 header {
   line-height: 1.5;
   height: 600px;
   background-color: rgb(88, 120, 110);
   color: white;
-  
 }
 
 .logo {
   display: block;
   margin: 0 auto 2rem;
 }
-
 
 nav {
   width: 100%;
@@ -92,19 +85,18 @@ nav a:first-of-type {
     margin: 0 2rem 0 0;
   }
 
-  .profil{
+  .profil {
     margin-right: 20px;
   }
-  .profil img {
-  border: 2px solid green; /* Border warna hijau */
-  border-radius: 50%; /* Border radius untuk membuat gambar lingkaran */
-  padding: 2px;
-  margin-left: 20px;
-}
 
+  .profil img {
+    border: 2px solid green;
+    border-radius: 50%;
+    padding: 2px;
+    margin-left: 20px;
+  }
 
   header .wrapper {
-    
     place-items: flex-start;
     flex-wrap: wrap;
   }
@@ -113,10 +105,8 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
 }
 </style>
-
