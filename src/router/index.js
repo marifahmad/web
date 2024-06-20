@@ -6,6 +6,7 @@ import Biodata from '../views/biodataView.vue'
 import Skill from '../views/skillView.vue'
 import Pengalaman from '../views/PengalamanView.vue'
 import Tugas from '../components/Tugas.vue' // Import the new Tugas component
+import FreeTugas from '../components/FreeTugas.vue' 
 
 const routes = [
   { path: '/', component: HomeView },
@@ -13,7 +14,9 @@ const routes = [
   { path: '/biodata', component: Biodata },
   { path: '/skill', component: Skill },
   { path: '/pengalaman', component: Pengalaman },
-  { path: '/tugas', component: Tugas } // Add new route
+  { path: '/tugas', component: Tugas },
+  { path: '/free-tugas', component: FreeTugas } // Add new route
+  
 ]
 
 const router = createRouter({

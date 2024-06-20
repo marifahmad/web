@@ -4,7 +4,7 @@
       <h2>List of Tugas</h2>
       <ul>
         <li @click="goToUrl('https://ahmad-projectcv.netlify.app')">Tugas 1</li>
-        <li @click="goToUrl('https://example2.netlify.app')">Tugas 2</li>
+        <li @click="goToRoute('/free-tugas')">Tugas 2</li>
         <li @click="goToUrl('https://marifahmad.netlify.app')">Tugas 3</li>
         <li @click="goToUrl('https://marifahmad-223510434-prapbk.netlify.app')">Tugas 4</li>
         <li @click="goToUrl('https://marifahmad-223510434-ppbk-t5-landingp.netlify.app')">Tugas 5</li>
@@ -20,6 +20,9 @@
     methods: {
       goToUrl(url) {
         window.location.href = url;
+      },
+      goToRoute(route) {
+        this.$router.push(route);
       }
     },
     mounted() {

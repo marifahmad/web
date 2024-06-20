@@ -10,7 +10,7 @@ import Footer from './components/footer.vue'
       <img src="/src/assets/profile-picture.jpg" alt="" width="200px" height="200px" srcset="">
     </div>
     <div class="wrapper">
-      <HelloWorld msg="M.Arif Ahmad" />
+      <HelloWorld msg="M.Arif Ahmad"  />
       
       <nav>
         <RouterLink to="/">Home</RouterLink><br>
